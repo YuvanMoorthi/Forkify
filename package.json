@@ -1,21 +1,27 @@
 {
-  "name": "forkify",
+  "name": "final",
   "version": "1.0.0",
-  "description": "Recipe application",
-  "default": "index.html",
+  "description": "Recipe application with custom recipe uploads.",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html"
   },
-  "author": "Jonas Schedtmann",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuvanMoorthi/Forkify.app.git"
+  },
+  "author": "Yuvan",
   "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.0.0-beta.1",
-    "sass": "^1.26.10"
+  "bugs": {
+    "url": "https://github.com/YuvanMoorthi/Forkify.app/issues"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "fractional": "^1.0.0",
-    "regenerator-runtime": "^0.13.7"
+  "homepage": "https://github.com/YuvanMoorthi/Forkify.app#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "core-js": "^3.43.0",
+    "fraction.js": "^5.2.2",
+    "parcel": "^2.15.4",
+    "regenerator-runtime": "^0.14.1",
+    "sass": "^1.89.2"
   }
 }
