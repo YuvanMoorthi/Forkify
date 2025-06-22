@@ -4,17 +4,20 @@ import icons from 'url:../../img/icons.svg';
 
 
 class PreviewView extends View {
-  _parentElement = '';
+  _parentElement = document.querySelector('.results');
+
 
   _generateMarkup() {
     const id = window.location.hash.slice(1);
 
     return `
       <li class="preview">
-        <a class="preview__link ${this._data.id === id ? 'preview__link--active' : ''
-      }" href="#${this._data.id}">
+        <a class="preview__link ${this._data.id === id ? 'preview__link--active' : ''}" 
+   href="#${this._data.id}" 
+   ${this._data.id === id ? 'aria-current="true"' : ''}>
+
           <figure class="preview__fig">
-            <img src="${this._data.image}" alt="${this._data.title}" />
+           <img src="${this._data.image}" alt="${this._data.title}" loading="lazy" />
           </figure>
           <div class="preview__data">
             <h4 class="preview__title">${this._data.title}</h4>

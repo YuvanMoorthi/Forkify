@@ -34,14 +34,6 @@ html {
   font-size: 62.5%;
 }
 
-svg,
-svg use {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  fill: red;
-}
-
 @media only screen and (max-width: 61.25em) {
   html {
     font-size: 50%;

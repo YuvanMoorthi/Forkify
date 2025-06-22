@@ -1,6 +1,5 @@
 import View from './View.js';
 
-
 class AddRecipeView extends View {
   _parentElement = document.querySelector('.upload');
   _message = 'Recipe was successfully uploaded :)';
@@ -12,8 +11,18 @@ class AddRecipeView extends View {
 
   constructor() {
     super();
-    this._addHandlerShowWindow();
-    this._addHandlerHideWindow();
+    // Add window toggle handlers only if elements exist
+    if (this._btnOpen && this._btnClose && this._overlay) {
+      this._addHandlerShowWindow();
+      this._addHandlerHideWindow();
+    }
+
+    // Optional UX: Close modal on ESC key
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !this._window.classList.contains('hidden')) {
+        this.toggleWindow();
+      }
+    });
   }
 
   toggleWindow() {
@@ -39,7 +48,10 @@ class AddRecipeView extends View {
     });
   }
 
-  _generateMarkup() { }
+  // No UI markup needed for this View class
+  _generateMarkup() {
+    throw new Error('No markup needed for AddRecipeView.');
+  }
 }
 
 export default new AddRecipeView();
