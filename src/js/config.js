@@ -6,6 +6,6 @@ export const RES_PER_PAGE = 10;
 export const KEY = '5ac2e643-8096-485e-97b2-c9630cca9c8a';
 export const MODAL_CLOSE_SEC = 2.5;
 
-export const ICON_PATH = icons;
+export const { ICON_PATH } = icons;
 console.log(ICON_PATH);
 console.log(icons);
