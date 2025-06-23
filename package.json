@@ -4,7 +4,7 @@
   "description": "Recipe application with custom recipe uploads.",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist --public-url /"
+    "build": "parcel build index.html --dist-dir ./dist --public-url ./"
   },
   "repository": {
     "type": "git",
