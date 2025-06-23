@@ -8,10 +8,9 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
       rel="stylesheet"
     />
-    <link rel="favicon" href="src/img/favicon.png" type="image/x-icon" />
-
-    <link rel="stylesheet" href="src/css/style.css" />
-    <script type="module" src="src/js/controller.js"></script>
+    <link rel="favicon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/controller.js"></script>
 
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
@@ -19,7 +18,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="src/img/logo.png" alt="Logo" class="header__logo" />
+        <img src="./img/logo.png" alt="Logo" class="header__logo" />
         <form class="search">
           <input
             type="text"
@@ -28,7 +27,7 @@
           />
           <button class="btn search__btn">
             <svg class="search__icon">
-              <use href="src/img/icons.svg#icon-search"></use>
+              <use href="./img/icons.svg#icon-search"></use>
             </svg>
             <span>Search</span>
           </button>
@@ -39,7 +38,7 @@
             <li class="nav__item">
               <button class="nav__btn nav__btn--add-recipe">
                 <svg class="nav__icon">
-                  <use href="src/img/icons.svg#icon-edit"></use>
+                  <use href="./img/icons.svg#icon-edit"></use>
                 </svg>
                 <span>Add recipe</span>
               </button>
@@ -47,7 +46,7 @@
             <li class="nav__item">
               <button class="nav__btn nav__btn--bookmarks">
                 <svg class="nav__icon">
-                  <use href="src/img/icons.svg#icon-bookmark"></use>
+                  <use href="./img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <span>Bookmarks</span>
               </button>
@@ -56,7 +55,7 @@
                   <div class="message">
                     <div>
                       <svg>
-                        <use href="src/img/icons.svg#icon-smile"></use>
+                        <use href="./img/icons.svg#icon-smile"></use>
                       </svg>
                     </div>
                     <p>
@@ -91,7 +90,7 @@
         <div class="message">
           <div>
             <svg>
-              <use href="src/img/icons.svg#icon-smile"></use>
+              <use href="./img/icons.svg#icon-smile"></use>
             </svg>
           </div>
           <p>Start by searching for a recipe or an ingredient. Have fun!</p>
@@ -106,24 +105,29 @@
         <div class="upload__column">
           <h3 class="upload__heading">Recipe data</h3>
           <label>Title</label>
-          <input value="TEST23" required name="title" type="text" />
+          <input value="Hamburger" required name="title" type="text" />
           <label>URL</label>
-          <input value="TEST23" required name="sourceUrl" type="text" />
+          <input value="#" required name="sourceUrl" type="text" />
           <label>Image URL</label>
-          <input value="TEST23" required name="image" type="text" />
+          <input
+            value="https://media.istockphoto.com/id/2161969653/photo/burger-served-on-a-wooden-plate-with-lettuce-onion-tomato-big-patty-bacon-social-media-post.jpg?s=1024x1024&w=is&k=20&c=a0lsBVtqAA7_rNQrTQtIfzqM477MJKxdfYzlBeOPk1M= "
+            required
+            name="image"
+            type="text"
+          />
           <label>Publisher</label>
-          <input value="TEST23" required name="publisher" type="text" />
+          <input value="Yuvan" required name="publisher" type="text" />
           <label>Prep time</label>
-          <input value="23" required name="cookingTime" type="number" />
+          <input value="30" required name="cookingTime" type="number" />
           <label>Servings</label>
-          <input value="23" required name="servings" type="number" />
+          <input value="1" required name="servings" type="number" />
         </div>
 
         <div class="upload__column">
           <h3 class="upload__heading">Ingredients</h3>
           <label>Ingredient 1</label>
           <input
-            value="0.5,kg,Rice"
+            value="0.5,kg,meat"
             type="text"
             required
             name="ingredient-1"
@@ -131,14 +135,14 @@
           />
           <label>Ingredient 2</label>
           <input
-            value="1,,Avocado"
+            value="2,,Bread"
             type="text"
             name="ingredient-2"
             placeholder="Format: 'Quantity,Unit,Description'"
           />
           <label>Ingredient 3</label>
           <input
-            value=",,salt"
+            value="2,,Tomato"
             type="text"
             name="ingredient-3"
             placeholder="Format: 'Quantity,Unit,Description'"
@@ -165,7 +169,7 @@
 
         <button class="btn upload__btn">
           <svg>
-            <use href="src/img/icons.svg#icon-upload-cloud"></use>
+            <use href="./img/icons.svg#icon-upload-cloud"></use>
           </svg>
           <span>Upload</span>
         </button>
